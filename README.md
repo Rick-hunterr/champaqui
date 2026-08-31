@@ -1,19 +1,44 @@
-# Córdoba Capital → Cerro Champaquí, a pie
+<div align="center">
+<img src="docs/banner/banner.png" alt="Córdoba Capital → Cerro Champaquí, a pie" width="100%">
+</div>
+
+<div align="center">
+
+[![HTML/CSS/JS](https://img.shields.io/badge/Stack-HTML%20%C2%B7%20CSS%20%C2%B7%20JS-B9852A?style=flat)]()
+[![Leaflet](https://img.shields.io/badge/Mapa-Leaflet-3C6E47?style=flat)](https://leafletjs.com/)
+[![Offline](https://img.shields.io/badge/Funciona-sin%20conexi%C3%B3n-AD3B2C?style=flat)]()
+[![Licencia](https://img.shields.io/badge/Uso-expedici%C3%B3n%20personal-57503f?style=flat)]()
+
+</div>
 
 Cuaderno de ruta interactivo para una expedición de 7 personas caminando desde
 Plaza Jerónimo del Barco (Córdoba Capital) hasta la cumbre del Cerro Champaquí,
 en enero.
+
+---
 
 ## Cómo abrirlo
 
 No hace falta instalar nada ni levantar un servidor: abrí `index.html` con
 cualquier navegador (doble clic, o arrastrarlo a una pestaña).
 
-```
+```bash
 open index.html          # macOS
 xdg-open index.html      # Linux
 start index.html         # Windows
 ```
+
+## Descargar para usar sin wifi
+
+Desde el mapa, el botón **⬇ Sin wifi** abre un panel con los archivos para
+llevar en el celular o el GPS antes de perder cobertura:
+
+| Archivo | Para qué |
+|---|---|
+| `data/ruta_champaqui.gpx` | GPS de mano, Garmin, OsmAnd |
+| `data/ruta_champaqui.kml` | Google Earth / Google Maps |
+| `data/ruta_champaqui.geojson` | Datos crudos |
+| `docs/GUIA_EXPEDICION_CHAMPAQUI.docx` | Guía completa, para leer offline |
 
 ## Qué funciona sin conexión y qué no
 
@@ -31,7 +56,19 @@ Lo único que sigue necesitando internet, y no hay forma de evitarlo sin un
 paquete de tiles offline aparte, son **las imágenes del mapa base** (los
 "tiles" de OpenStreetMap) — eso es así en cualquier mapa web interactivo,
 incluido Google Maps. Si el mapa base no carga, todo lo demás (marcadores,
-rutas, popups, capas) sigue funcionando igual.
+rutas, popups, capas, descargas) sigue funcionando igual — por eso conviene
+bajar el GPX/KML antes de salir de cobertura.
+
+## Cómo elegir ruta
+
+El panel **Capas de ruta** agrupa las opciones documentadas en tres bloques:
+
+| Grupo | Capa | Qué es |
+|---|---|---|
+| A pie — Córdoba → Villa Alpina | 🚶 Tramo A curado (rojo) | Camino más directo, pero vehicular: sin sendero peatonal verificado |
+| A pie — Córdoba → Villa Alpina | 🥾 Camino viejo RP5 (oliva) | Más lento, pero evita la autovía nueva de peaje — mejor candidato para caminar |
+| En auto (opcional) | 🚗 Traslado en auto (azul) | La opción más rápida y segura: resolver este tramo en vehículo |
+| Sendero de montaña | ⛰ Sendero Champaquí (verde) | Villa Alpina → refugios → cumbre. El único tramo 100% verificado como sendero peatonal real |
 
 ## Cómo están hechas las rutas
 
@@ -65,19 +102,11 @@ antes de dibujar cada `ROUTES[key].segments`.
 │   ├── ruta_champaqui.kml              # waypoints para Google Earth/Maps
 │   └── ruta_champaqui.geojson          # waypoints en formato GeoJSON
 ├── docs/
-│   └── GUIA_EXPEDICION_CHAMPAQUI.docx  # guía de expedición completa (21 secciones)
+│   ├── GUIA_EXPEDICION_CHAMPAQUI.docx  # guía de expedición completa (21 secciones)
+│   └── banner/                         # banner del README (generado por script)
 └── vendor/
     └── leaflet/                       # Leaflet vendorizado (sin CDN)
 ```
-
-## Capas del mapa
-
-| Capa | Color | Por defecto | Qué es |
-|---|---|---|---|
-| Tramo A curado | rojo punteado | ON | Ruta vehicular Córdoba → Villa Alpina documentada, sin sendero peatonal verificado |
-| Camino viejo RP5 | oliva punteado | ON | Alternativa más caminable encontrada — camino local que evita la autovía nueva de peaje |
-| Traslado en auto | azul rayado | OFF | La opción más rápida y segura: resolver el Tramo A en auto y caminar solo el Champaquí real |
-| Sendero Champaquí | verde sólido | ON | El único tramo 100% verificado como sendero peatonal real, con registro oficial obligatorio |
 
 ## Fuentes y verificación
 
@@ -97,3 +126,11 @@ tener una versión online sin instalar nada:
 2. Guardar. El sitio queda publicado en `https://<usuario>.github.io/<repo>/`.
 
 No hace falta ningún paso de build — es HTML/CSS/JS plano.
+
+---
+
+<div align="center">
+
+*Hecho para caminar 165 km sin depender del wifi.*
+
+</div>

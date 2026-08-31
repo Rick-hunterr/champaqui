@@ -34,11 +34,31 @@
 
 <div class="dossier" id="layerpanel">
   <h2>Capas de ruta</h2>
-  <label class="lyr-row"><input type="checkbox" data-layer="tramoA"> Tramo A curado (rojo)</label>
-  <label class="lyr-row"><input type="checkbox" data-layer="caminoViejo"> Camino viejo RP5 (oliva)</label>
-  <label class="lyr-row"><input type="checkbox" data-layer="trasladoAuto"> Traslado en auto (azul)</label>
-  <label class="lyr-row"><input type="checkbox" data-layer="tramoB"> Sendero Champaquí (verde)</label>
+
+  <p class="lyr-group">A pie — Córdoba → Villa Alpina (elegí una o compará las dos)</p>
+  <label class="lyr-row"><input type="checkbox" data-layer="tramoA"> 🚶 Tramo A — más directo (rojo)</label>
+  <p class="lyr-sub">Camino más corto, pero vehicular: sin sendero peatonal confirmado en el tramo Córdoba–Alta Gracia.</p>
+  <label class="lyr-row"><input type="checkbox" data-layer="caminoViejo"> 🥾 Camino viejo RP5 (oliva)</label>
+  <p class="lyr-sub">Más lento, pero evita la autovía nueva de peaje — pasa por los pueblos, mejor candidato para caminar.</p>
+
+  <p class="lyr-group">En auto (opcional)</p>
+  <label class="lyr-row"><input type="checkbox" data-layer="trasladoAuto"> 🚗 Traslado en auto (azul)</label>
+  <p class="lyr-sub">La opción más rápida y segura: resolver este tramo en vehículo y caminar solo el Champaquí real.</p>
+
+  <p class="lyr-group">Sendero de montaña (el único 100% verificado)</p>
+  <label class="lyr-row"><input type="checkbox" data-layer="tramoB"> ⛰ Sendero Champaquí (verde)</label>
+  <p class="lyr-sub">Villa Alpina → refugios → cumbre. Señalizado, con registro oficial obligatorio.</p>
+
   <p class="lyr-note">Todas las líneas conectan puntos reales verificados — no son un trazado calculado por un motor de ruteo (ver README, sección "Cómo están hechas las rutas").</p>
+</div>
+
+<div class="dossier hidden" id="downloadpanel">
+  <h2>Descargar para usar sin wifi</h2>
+  <p class="lyr-note">Esta página ya funciona sin conexión (ver README). Para llevar la ruta en el celular o el GPS de mano, bajá estos archivos antes de salir de cobertura:</p>
+  <a class="dl-row" href="data/ruta_champaqui.gpx" download>📍 Track GPX <span>— Garmin, OsmAnd, cualquier GPS</span></a>
+  <a class="dl-row" href="data/ruta_champaqui.kml" download>🌍 Track KML <span>— Google Earth / Maps</span></a>
+  <a class="dl-row" href="data/ruta_champaqui.geojson" download>🗂 GeoJSON <span>— datos crudos</span></a>
+  <a class="dl-row" href="docs/GUIA_EXPEDICION_CHAMPAQUI.docx" download>📘 Guía completa <span>— 21 secciones, para leer offline</span></a>
 </div>
 
 <div class="dossier" id="stat-ribbon">
@@ -67,6 +87,7 @@
 
 <div class="tab-toggle" style="top:14px; right:14px;" onclick="togglePanel('stat-ribbon')">De un vistazo</div>
 <div class="tab-toggle" style="top:52px; right:14px;" onclick="togglePanel('daypanel')">Itinerario rápido</div>
+<div class="tab-toggle" style="top:90px; right:14px;" onclick="togglePanel('downloadpanel')">⬇ Sin wifi</div>
 <button id="fit-all-btn">🗺 Ver todo</button>
 
 <button id="locate-btn" onclick="locateMe()">📍 Mi ubicación</button>
