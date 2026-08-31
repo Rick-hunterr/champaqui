@@ -1,0 +1,173 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Plaza Jeronimo del Barco - INICIO",
+        "description": "Punto de inicio de la expedicion, Av. Colon 2700, Cordoba Capital."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.2180323,
+          -31.4037967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alta Gracia - Hospital Dr. Arturo U. Illia",
+        "description": "40 km desde el inicio por autopista RP5 con peaje (sin acceso peatonal verificado). Hospital: +54 3547 42-9285."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.4273429,
+          -31.6584428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Villa La Bolsa",
+        "description": "Localidad intermedia. Servicios sin verificar - REQUIERE CONFIRMACION."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.4296872,
+          -31.7293726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Villa Ciudad de America",
+        "description": "Localidad sobre el dique Los Molinos. Ruta sinuosa, mucho transito."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.5177602,
+          -31.7899576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Los Reartes",
+        "description": "Ruta sinuosa hacia Villa Gral. Belgrano, curvas peligrosas segun reportes de ruta."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.5740952,
+          -31.9089342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Villa General Belgrano",
+        "description": "89 km desde el inicio. Centro turistico completo. Bomberos: +54 3546 46-2222."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.5594102,
+          -31.9776652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Athos Pampa",
+        "description": "Paso obligado en RP5/RP109 hacia Villa Alpina."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.6814739,
+          -31.990447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Villa Alpina - Base del ascenso",
+        "description": "125 km desde Cordoba Capital. Puesto oficial de registro Zona de Riesgo (Ley 9856). Camping Villa Alpina: +54 3464 52-7375."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.8132356,
+          -31.9563507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zona de refugios - Rio Tabaquillos (posicion aproximada)",
+        "description": "~14 km desde Villa Alpina, +700/800m, 7-8h. Refugios privados informales. Acampe con carpa tolerado. Posicion APROXIMADA, no track GPS exacto - descargar track real de Wikiloc antes de navegar."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.87,
+          -31.972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cumbre Cerro Champaqui",
+        "description": "2790 msnm. Punto mas alto de la provincia de Cordoba."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.9366659,
+          -31.9874993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Villa Yacanto de Calamuchita (puesto oficial alternativo)",
+        "description": "Uno de los 5 puestos oficiales de registro Zona de Riesgo. No es parte del acceso clasico por Villa Alpina."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.7540869,
+          -32.1057442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hospital Regional Santa Rosa de Calamuchita",
+        "description": "Referencia hospitalaria del valle. Tel: +54 3546 42-6683."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.5304379,
+          -32.0624326
+        ]
+      }
+    }
+  ]
+}

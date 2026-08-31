@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Champaquí a pie — Cuaderno de ruta</title>
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="map"></div>
+
+<div class="dossier" id="masthead">
+  <p class="eyebrow">Cuaderno de ruta — expedición de 7</p>
+  <h1>Córdoba Capital → Cerro Champaquí, a pie</h1>
+  <p>Enero, verano serrano. <b>Rojo punteado</b> = ruta vehicular sin sendero peatonal verificado. <b class="safe">Verde</b> = sendero de montaña real, señalizado y con registro oficial. Tocá un punto para ver la ficha.</p>
+</div>
+
+<div class="dossier" id="legend">
+  <h2>Referencias</h2>
+  <div class="row"><span class="swatch" style="background:#AD3B2C"></span>Inicio / Alta Gracia</div>
+  <div class="row"><span class="swatch" style="background:#B9852A"></span>Localidad a confirmar</div>
+  <div class="row"><span class="swatch" style="background:#3E5C74"></span>Hospital / bomberos</div>
+  <div class="row"><span class="swatch" style="background:#2A4E33"></span>Villa Alpina — base</div>
+  <div class="row"><span class="swatch" style="background:#3C6E47"></span>Refugios / acampe</div>
+  <div class="row"><span class="swatch" style="background:#7A3B12"></span>Cumbre 2790 m</div>
+  <div class="row"><span class="swatch" style="background:#6B7F3A"></span>Camino viejo RP5</div>
+  <div class="row"><span class="stripe" style="background:repeating-linear-gradient(90deg,#AD3B2C 0 6px,transparent 6px 10px)"></span>Tramo A — a verificar</div>
+  <div class="row"><span class="stripe" style="background:repeating-linear-gradient(90deg,#6B7F3A 0 4px,transparent 4px 6px)"></span>Camino viejo — candidato</div>
+  <div class="row"><span class="stripe" style="background:repeating-linear-gradient(90deg,#1F3A5F 0 6px,transparent 6px 6px)"></span>Traslado en auto (opcional)</div>
+  <div class="row"><span class="stripe" style="background:#3C6E47"></span>Tramo B — sendero real</div>
+</div>
+
+<div class="dossier" id="layerpanel">
+  <h2>Capas de ruta</h2>
+  <label class="lyr-row"><input type="checkbox" data-layer="tramoA"> Tramo A curado (rojo)</label>
+  <label class="lyr-row"><input type="checkbox" data-layer="caminoViejo"> Camino viejo RP5 (oliva)</label>
+  <label class="lyr-row"><input type="checkbox" data-layer="trasladoAuto"> Traslado en auto (azul)</label>
+  <label class="lyr-row"><input type="checkbox" data-layer="tramoB"> Sendero Champaquí (verde)</label>
+  <p class="lyr-note">Todas las líneas conectan puntos reales verificados — no son un trazado calculado por un motor de ruteo (ver README, sección "Cómo están hechas las rutas").</p>
+</div>
+
+<div class="dossier" id="stat-ribbon">
+  <h2>De un vistazo</h2>
+  <div class="stat"><span class="k">Distancia total</span><span class="v">~165 km</span></div>
+  <div class="stat"><span class="k">Días (ritmo normal)</span><span class="v">7–9</span></div>
+  <div class="stat"><span class="k">Días (ritmo rápido)</span><span class="v">6–7</span></div>
+  <div class="stat"><span class="k">Punto más alto</span><span class="v">2790 m</span></div>
+  <div class="stat"><span class="k">Desnivel Tramo B</span><span class="v">~1500 m</span></div>
+  <div class="stat"><span class="k">Campings confirmados</span><span class="v">1</span></div>
+  <div class="stat"><span class="k">Tramos a verificar</span><span class="v">6</span></div>
+  <div class="stat"><span class="k">Riesgo principal</span><span class="v" style="color:#AD3B2C">Tránsito Tramo A</span></div>
+</div>
+
+<div class="dossier" id="daypanel">
+  <h2>Itinerario — ritmo rápido (5 días a Villa Alpina)</h2>
+  <div class="day warn"><div class="d-num">Día 1</div><div class="d-route">Pza. J. del Barco → Alta Gracia</div><div class="d-meta">40 km</div><div class="d-flag bad">⚠ autopista, no verificado</div></div>
+  <div class="day warn"><div class="d-num">Día 2</div><div class="d-route">Alta Gracia → V. Ciudad de América</div><div class="d-meta">~35 km</div><div class="d-flag bad">⚠ a verificar</div></div>
+  <div class="day warn"><div class="d-num">Día 3</div><div class="d-route">V. Ciudad de América → Villa Gral. Belgrano</div><div class="d-meta">~25 km, vía Los Reartes</div><div class="d-flag bad">⚠ a verificar</div></div>
+  <div class="day warn"><div class="d-num">Día 4</div><div class="d-route">Villa Gral. Belgrano → Athos Pampa</div><div class="d-meta">~25 km</div><div class="d-flag bad">⚠ a verificar</div></div>
+  <div class="day warn"><div class="d-num">Día 5</div><div class="d-route">Athos Pampa → Villa Alpina</div><div class="d-meta">~15 km, tramo de montaña</div><div class="d-flag bad">⚠ a verificar</div></div>
+  <div class="day"><div class="d-num">Día 6</div><div class="d-route">Villa Alpina → Zona de refugios</div><div class="d-meta">14 km · +700/800m · 7-8h</div><div class="d-flag ok">✓ sendero real</div></div>
+  <div class="day"><div class="d-num">Día 7</div><div class="d-route">Refugios → Cumbre → Refugios</div><div class="d-meta">14 km i/v · +/-700m · 7-8h</div><div class="d-flag ok">✓ sendero real</div></div>
+  <div class="day"><div class="d-num">Día 8</div><div class="d-route">Refugios → Villa Alpina</div><div class="d-meta">14 km · -700/800m · 5-6h</div><div class="d-flag ok">✓ sendero real</div></div>
+</div>
+
+<div class="tab-toggle" style="top:14px; right:14px;" onclick="togglePanel('stat-ribbon')">De un vistazo</div>
+<div class="tab-toggle" style="top:52px; right:14px;" onclick="togglePanel('daypanel')">Itinerario rápido</div>
+<button id="fit-all-btn">🗺 Ver todo</button>
+
+<button id="locate-btn" onclick="locateMe()">📍 Mi ubicación</button>
+
+<script src="vendor/leaflet/leaflet.js"></script>
+<script src="data/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

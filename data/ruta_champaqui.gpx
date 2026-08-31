@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guia Expedicion Champaqui" xmlns="http://www.topografix.com/GPX/1/1">
+  <wpt lat="-31.4037967" lon="-64.2180323">
+    <name>Plaza Jeronimo del Barco - INICIO</name>
+    <desc>Punto de inicio de la expedicion, Av. Colon 2700, Cordoba Capital.</desc>
+  </wpt>
+  <wpt lat="-31.6584428" lon="-64.4273429">
+    <name>Alta Gracia - Hospital Dr. Arturo U. Illia</name>
+    <desc>40 km desde el inicio por autopista RP5 con peaje (sin acceso peatonal verificado). Hospital: +54 3547 42-9285.</desc>
+  </wpt>
+  <wpt lat="-31.7293726" lon="-64.4296872">
+    <name>Villa La Bolsa</name>
+    <desc>Localidad intermedia. Servicios sin verificar - REQUIERE CONFIRMACION.</desc>
+  </wpt>
+  <wpt lat="-31.7899576" lon="-64.5177602">
+    <name>Villa Ciudad de America</name>
+    <desc>Localidad sobre el dique Los Molinos. Ruta sinuosa, mucho transito.</desc>
+  </wpt>
+  <wpt lat="-31.9089342" lon="-64.5740952">
+    <name>Los Reartes</name>
+    <desc>Ruta sinuosa hacia Villa Gral. Belgrano, curvas peligrosas segun reportes de ruta.</desc>
+  </wpt>
+  <wpt lat="-31.9776652" lon="-64.5594102">
+    <name>Villa General Belgrano</name>
+    <desc>89 km desde el inicio. Centro turistico completo. Bomberos: +54 3546 46-2222.</desc>
+  </wpt>
+  <wpt lat="-31.990447" lon="-64.6814739">
+    <name>Athos Pampa</name>
+    <desc>Paso obligado en RP5/RP109 hacia Villa Alpina.</desc>
+  </wpt>
+  <wpt lat="-31.9563507" lon="-64.8132356">
+    <name>Villa Alpina - Base del ascenso</name>
+    <desc>125 km desde Cordoba Capital. Puesto oficial de registro Zona de Riesgo (Ley 9856). Camping Villa Alpina: +54 3464 52-7375.</desc>
+  </wpt>
+  <wpt lat="-31.972" lon="-64.87">
+    <name>Zona de refugios - Rio Tabaquillos (posicion aproximada)</name>
+    <desc>~14 km desde Villa Alpina, +700/800m, 7-8h. Refugios privados informales. Acampe con carpa tolerado. Posicion APROXIMADA, no track GPS exacto - descargar track real de Wikiloc antes de navegar.</desc>
+  </wpt>
+  <wpt lat="-31.9874993" lon="-64.9366659">
+    <name>Cumbre Cerro Champaqui</name>
+    <desc>2790 msnm. Punto mas alto de la provincia de Cordoba.</desc>
+  </wpt>
+  <wpt lat="-32.1057442" lon="-64.7540869">
+    <name>Villa Yacanto de Calamuchita (puesto oficial alternativo)</name>
+    <desc>Uno de los 5 puestos oficiales de registro Zona de Riesgo. No es parte del acceso clasico por Villa Alpina.</desc>
+  </wpt>
+  <wpt lat="-32.0624326" lon="-64.5304379">
+    <name>Hospital Regional Santa Rosa de Calamuchita</name>
+    <desc>Referencia hospitalaria del valle. Tel: +54 3546 42-6683.</desc>
+  </wpt>
+</gpx>
